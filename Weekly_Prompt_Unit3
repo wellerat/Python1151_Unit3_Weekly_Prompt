@@ -1,3 +1,14 @@
 Weekly Prompt - 
 Pick a S.O.L.I.D. design principle and explain the concept and how you can meet that principle when designing a program
 
+The Single Responsibility Principle (SRP) requires that a class should have one job and one reason to 
+change.  When a class has multiple tasks, it becomes more confusing and harder to test. If changes are 
+required later (after testing or additional requirements), if SRP has been followed, the changes will 
+be clear, and there is less of a chance of unintentionally changing functionality.  If a class starts 
+to have more than one job, it violates SRP and should be split into two or more classes.  If you have 
+a class called Cars that prints car information, stores car information, and modifies car information, 
+that is too much for the class; it should be split into three classes: CarsPrint, Cars, and CarsModify.  
+This separation keeps each class individualized, easier to maintain, and less likely to introduce 
+issues when updated. This is not specific to classes; SRP applies to other units of code such as 
+functions, modules, and packages.  
+
